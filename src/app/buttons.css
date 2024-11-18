@@ -1,0 +1,119 @@
+.custom-button {
+    font-weight: 500;
+    font-size: 14px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    gap:0.2rem;
+    line-height: 1;
+    border-radius: 5px;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+  
+  }
+  .custom-button svg{
+    width:18px;
+    height: 18px;
+  }
+  /*------------------- Buttons Types ------------------- */
+  .custom-button--primary {
+    color: white;
+    background-color: #BE2D19;
+  }
+  .custom-button--secondary {
+    color: #333;
+    background-color: #c5c5c5;
+  }
+  .custom-button--outline {
+    color: #333;
+    background-color: transparent;
+    border:1px solid #c5c5c5;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  }
+  .custom-button--link {
+    color: #BE2D19;
+    background-color: transparent;
+    padding:0 !important;
+  }
+  .custom-button--primary svg>path{
+    fill:#fff !important;
+  }
+  
+  .custom-button:focus{
+    transform: scale(0.98);
+  }
+  
+  
+  .custom-button:disabled{
+    cursor: no-drop;
+    filter: opacity(0.5);
+  }
+  
+  .custom-button--link:hover {
+    text-decoration: underline;
+  }
+  
+  /*------------------- Buttons Sizes ------------------- */
+  
+  .custom-button--small {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+  .custom-button--medium {
+    font-size: 14px;
+    padding: 11px 20px;
+  }
+  .custom-button--large {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+  
+  button .circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #cacaca77;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale .5s ease-in-out;
+  }
+  
+  
+  @keyframes scale {
+    to {
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+    }
+  }
+  
+  .loader {
+    width: 20px;
+    aspect-ratio: 1;
+    --c: no-repeat linear-gradient( #BE2D19 0 0);
+    background: 
+      var(--c) 0%   50%,
+      var(--c) 50%  50%,
+      var(--c) 100% 50%;
+    background-size: 20% 100%;
+    animation: l1 1s infinite linear;
+  }
+  @keyframes l1 {
+    0%  {background-size: 20% 100%,20% 100%,20% 100%}
+    33% {background-size: 20% 10% ,20% 100%,20% 100%}
+    50% {background-size: 20% 100%,20% 10% ,20% 100%}
+    66% {background-size: 20% 100%,20% 100%,20% 10% }
+    100%{background-size: 20% 100%,20% 100%,20% 100%}
+  }
+  
+  .custom-button--primary .loader {
+    width: 20px;
+    aspect-ratio: 1;
+    --c: no-repeat linear-gradient( #fff 0 0);
+    background: 
+      var(--c) 0%   50%,
+      var(--c) 50%  50%,
+      var(--c) 100% 50%;
+    background-size: 20% 100%;
+    animation: l1 1s infinite linear;
+  }

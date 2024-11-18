@@ -1,0 +1,101 @@
+.entityContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("/img/entityBg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.entityContainer button{
+    justify-content: flex-start !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+
+}
+.entityContainer a:hover{
+    transform: scale(1.02);
+}
+.entityCard {
+  width: 60%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid #be2d19;
+  background: rgba(143, 143, 143, 0.142);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.5s;
+  margin:1rem;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.infoSection {
+  margin-bottom: 2rem;
+}
+
+.infoSection h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.infoSection ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.infoSection li {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.additionalInfo {
+  margin-top: 2rem;
+}
+
+.additionalInfo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.additionalInfo ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.additionalInfo li {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.error {
+  color: red;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (width<=768px) {
+
+    .entityCard , .entityContainer button{
+        width: 80%;
+    }
+  }
+
