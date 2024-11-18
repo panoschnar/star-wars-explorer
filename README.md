@@ -27,43 +27,34 @@ Ensure you have the following installed:
 
 1. Clone the repository:
 
+```bash
    git clone https://github.com/panoschnar/star-wars-explorer.git
    cd star-wars-explorer
+```
 
 2. Install dependencies:
 
-   Copy code
-   npm install
-
-   # or
-
-   yarn install
-
-   # or
-
-   pnpm install
-
-   # or
-
-   bun install
+```bash
+  npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
 
 3. Run the development server:
 
-   Copy code
-   npm run dev
-
+```bash npm run dev
    # or
-
    yarn dev
-
    # or
-
    pnpm dev
-
    # or
-
    bun dev
    Open your browser and navigate to: http://localhost:3000
+```
 
 ## How to Use
 
